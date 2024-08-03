@@ -1,7 +1,13 @@
-// use ToSpanTrait;
-fn main(){
-    let blue = [1,2,3,4,5,6].span();
-    for r in blue{
-        println!("{r}");
+fn factorial(n: u64) -> u64{
+    if n == 0 {
+        return 1;
+
+    } else {
+        return n * factorial(n -1);
     }
+}
+
+fn main (){
+    println!("{}", factorial(5));
+
 }
